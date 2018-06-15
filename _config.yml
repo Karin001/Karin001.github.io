@@ -79,4 +79,6 @@ theme: flexy
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: git@github.com:Karin001/Karin001.github.io.git
+  branch: master
