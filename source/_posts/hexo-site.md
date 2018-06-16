@@ -1,5 +1,5 @@
 ---
-title: hexo-极速建bolg-windows
+title: hexo-极速建bolg(for windows)
 date: 2018-06-16 15:06:34
 tags: hexo blog github
 intro: 用hexo快速搭建静态博客
@@ -24,10 +24,10 @@ intro: 用hexo快速搭建静态博客
 6. 确认无误后 输入hexo d 更新线上博客
 ---
 
-####  hexo环境搭建
+###  hexo环境搭建
 
-##### git
-1. 去[这里](https://git-scm.com/download)下载
+#### git
+1. 去[here](https://git-scm.com/download)下载
 2. 安装，一路点击
 3. 安装完后你的右下角开始菜单里应该能找到这两个东西
 ![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/88133562.jpg)
@@ -48,9 +48,9 @@ ssh-keygen -t rsa -C "youremail@example.com"
 8. 进去后找到ssh那一栏，点击new ssh key，将复制的内容粘贴进去，大功告成。
 ![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/33837002.jpg)
 
-##### node
+#### node
 1. 新建一个文件夹，我这里是f盘（随意），建一个叫npm的文件夹（f:/npm），
-2. 去[这里](https://nodejs.org/en/)下载LTS版本的node
+2. 去[here](https://nodejs.org/en/)下载LTS版本的node
 3. 安装，一路点击，注意装的位置
 4. 装完之后去安装路径，找到npm.cmd这个东西
 5. 打开命令行（按住shift敲鼠标右键，选择在此处打开命令行或者PowerShell），输入`npm -v`， 接着输入`node -v`，会显示版本号，表示安装OK。
@@ -68,24 +68,64 @@ phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs/
 electron_mirror=https://npm.taobao.org/mirrors/electron/
 registry=https://registry.npm.taobao.org
 ```
-##### hexo
+#### hexo
 1. 打开命令行，输入 `npm install -g hexo-cli` ，安装完成后输入`hexo -v`查看是否安装成功
 ---
 
-#### 在本地搭建hexo博客
+### 在本地搭建hexo博客
 
 #### 初始化博客
 1. 选择一个合适的路径，新建一个文件夹，该文件夹即将成为你的博客文件夹。在新建的文件夹下打开终端，输入`hexo init`，等待安装完成，完成后接着输入`npm i`,安装必要的组件，完成后接着输入`hexo g`,生成博客静态文件，接着输入`hexo s`,打开浏览器，在地址栏中输入`localhost:4000`回车之后就能看见博客了。
 2. 在终端中按住Ctrl+C键可以退出。
-
 #### 更换主题
 在[这里](https://hexo.io/themes/)能找到很多主题
-1. 点击图像可以预览，我们预览之后可以点击下面的文字去github克隆这个主题，这里假设我们选了下面框住的这个，当然你可以随意选。
-![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/54631383.jpg)
+1. 点击图像可以预览，点击文字可以去github克隆这个主题。这里我们选了这个next主题，外观简洁，功能多样，推荐的人很多。当然你可以随意选。
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/4302047.jpg)
 2. 到github之后，就可以按照他的说明文档尽心主题安装了，注意看安装说明，如果有特殊的步骤都会注明。
-![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/52365917.jpg)
-3. 复制`git clone https://github.com/huyingjie/hexo-theme-A-RSnippet.git themes/a-rsnippet`这一句
-4. 到你的博客文件夹里打开终端，将上面那句粘贴进来，回车。
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/42194811.jpg)
+3. 复制`git clone https://github.com/theme-next/hexo-theme-next themes/next`这一句
+4. 到你的博客文件夹根目录下，打开终端，将上面那句粘贴进来，回车。
 5. 可以看到博客文件夹下的theme文件夹里多了一个主题
-![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/52365917.jpg)
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/73405017.jpg)
+6. 点击上图中的_config.yml文件，按照下图修改
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/86230016.jpg)
+7. 在终端中清一下静态文件`hexo clean`，接着重新生成`hexo g`，本地serve一下`hexo s`，在loacalhost:4000能看到主题已经更换了
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/60554822.jpg)
+8. 现在试着发一篇文章，在终端中输入`hexo new [文章名字]`,在新增的[文章名字].md文件中输入一些文字，保存，我这里叫first.md。
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/20438466.jpg)
+9. 在终端中输入`hexo g`，接着`hexo s`，以后每次增加新文章都要这么做。现在刷新浏览器，可以看到文章已经更新了。
+8. 等你熟练了一些之后，就可以去网上搜索下next这款主题的配置方法，自行尝试该主题的丰富功能。
+---
 
+###  本地博客上线
+我们利用github page将本地的博客推上线
+1. 登录我们的github账号，新建一个仓库
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/87092925.jpg)
+2. Repository name仓一栏输入`[你的github用户名].github.io`，类似下面这个样子，注意替换用户名。
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/16665113.jpg)
+3. 创建好之后点击进入你刚才建的仓库，找到settings，点进去
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/8047537.jpg)
+4. 一直往下找，找到github page这一栏，上面有你的page地址，复制之后，点击下图的按钮
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/26775707.jpg)
+5. 访问你的github page，成功后回到hexo博客文件夹，打开根目录下的_config.yml文件，按图下配置，repository写你自己的。
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/50686748.jpg)
+6. 安装一个部署插件，在终端中输入`npm install hexo-deployer-git --save`
+7. 装好之后开始部署，输入`hexo d`，部署完成之后githubpage就变成了你hexo博客了。
+---
+
+### 购买域名
+我用的阿里云完成的域名购买，比较方便，因为域名要实名制备案，阿里云这块就全部集成了，按照他的流程来操作即可，可以随意。
+
+---
+
+### 域名解析
+域名需要通过dns解析之后才能被识别访问。
+1. 如果你的域名是顶级域名，像这个博客这样的一个单词，就去[here](https://help.github.com/articles/setting-up-an-apex-domain/),查阅步骤。如果不是，就去[here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)找到帮助。
+2. 打开域名控制台添加一条a记录，除了记录值一栏，其余按照下图填写
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/95437121.jpg)
+3. 记录值按照第一步打开的页面中如下部分填写，你的应该不一样，填写其中一条地址
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/312175.jpg)
+4. 可以重复第二，第三步，将所有的记录值都填写一遍，完成后将填写的几条配置全部启用。
+5. 在github里设置page的自定义域名
+![](http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/11204190.jpg)
+6. 等几分钟，大功告成
