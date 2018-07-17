@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="这个博客就是用hexo搭建的静态博客，很快就可以搞定，有多种主题可以选择hexo是静态博客，不需要后台，不需要数据库，唯一需要掏钱的地方就是购买域名（如果你需要一个与众不同的域名，比如我这样的，那么你需要支付几十元）静态博客的意思就是你大概只能用来写写文章，发发图片。其他的功能则要用一些工具来实现，比如评论。  搭建流程大概是这个样子：    准备好hexo博客所需的一系列环境（这是最繁琐的）">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo-极速建bolg(for windows)">
+<meta property="og:url" content="http://yoursite.com/2018/06/16/hexo-site/index.html">
+<meta property="og:site_name" content="截流">
+<meta property="og:description" content="这个博客就是用hexo搭建的静态博客，很快就可以搞定，有多种主题可以选择hexo是静态博客，不需要后台，不需要数据库，唯一需要掏钱的地方就是购买域名（如果你需要一个与众不同的域名，比如我这样的，那么你需要支付几十元）静态博客的意思就是你大概只能用来写写文章，发发图片。其他的功能则要用一些工具来实现，比如评论。  搭建流程大概是这个样子：    准备好hexo博客所需的一系列环境（这是最繁琐的）">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/88133562.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/57278515.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/40893030.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/33837002.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/22924758.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/20474890.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/4302047.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/42194811.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/73405017.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/86230016.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/60554822.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/20438466.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/87092925.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/16665113.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/8047537.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/26775707.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/50686748.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/95437121.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/312175.jpg">
+<meta property="og:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/11204190.jpg">
+<meta property="og:updated_time" content="2018-07-17T02:03:50.182Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo-极速建bolg(for windows)">
+<meta name="twitter:description" content="这个博客就是用hexo搭建的静态博客，很快就可以搞定，有多种主题可以选择hexo是静态博客，不需要后台，不需要数据库，唯一需要掏钱的地方就是购买域名（如果你需要一个与众不同的域名，比如我这样的，那么你需要支付几十元）静态博客的意思就是你大概只能用来写写文章，发发图片。其他的功能则要用一些工具来实现，比如评论。  搭建流程大概是这个样子：    准备好hexo博客所需的一系列环境（这是最繁琐的）">
+<meta name="twitter:image" content="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/88133562.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/16/hexo-site/"/>
+
+
+
+
+
+  <title>hexo-极速建bolg(for windows) | 截流</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7d5ddcf35c1bf1abab1fe7f6c4549e37";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">截流</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/16/hexo-site/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="截流">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="截流">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">hexo-极速建bolg(for windows)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-16T15:06:34+08:00">
+                2018-06-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web技术/" itemprop="url" rel="index">
+                    <span itemprop="name">web技术</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web技术/好玩的/" itemprop="url" rel="index">
+                    <span itemprop="name">好玩的</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>这个博客就是用hexo搭建的静态博客，很快就可以搞定，有多种主题可以选择<br>hexo是静态博客，不需要后台，不需要数据库，唯一需要掏钱的地方就是购买域名（如果你需要一个与众不同的域名，比如我这样的，那么你需要支付几十元）<br>静态博客的意思就是你大概只能用来写写文章，发发图片。其他的功能则要用一些工具来实现，比如评论。</p>
+</blockquote>
+<p>搭建流程大概是这个样子：  </p>
+<ol>
+<li>准备好hexo博客所需的一系列环境（这是最繁琐的）</li>
+<li>在本地快速搭建博客（秒开）</li>
+<li>将博客推上线（秒开）</li>
+<li>改域名（如果你需要一个自己的域名，那么这一步就是必须的。这一步会涉及到购买域名，以及一些dns配置）</li>
+</ol>
+<p>搭建好后写博文也非常方便，大概是这个样子使用：</p>
+<ol>
+<li>打开你的hexo博客文件夹（用你最喜欢的文本编辑器，我用的vscode）</li>
+<li>新建博文：在命令行中输入 hexo new [文件名字]</li>
+<li>编辑刚刚生成的md文件，保存</li>
+<li>输入hexo g 重新生产静态文件</li>
+<li>输入hexo s 在localhost:4000查看修改后的博客（这一步不是必须）</li>
+<li>确认无误后 输入hexo d 更新线上博客</li>
+</ol>
+<hr>
+<h3 id="hexo环境搭建"><a href="#hexo环境搭建" class="headerlink" title="hexo环境搭建"></a>hexo环境搭建</h3><h4 id="git"><a href="#git" class="headerlink" title="git"></a>git</h4><ol>
+<li>去<a href="https://git-scm.com/download" target="_blank" rel="noopener">here</a>下载</li>
+<li>安装，一路点击</li>
+<li>安装完后你的右下角开始菜单里应该能找到这两个东西<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/88133562.jpg" alt=""></li>
+<li><p>打开git bash，敲入以下内容，替换成自己的名字和邮箱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个ssh钥匙</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建完成后应该有两个文件，找到‘用户’目录下的.ssh文件夹下的id_rsa.pub，用记事本打开，复制里面的内容。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/57278515.jpg" alt=""></p>
+</li>
+<li>打开github，登录你自己的账号，如果没有则注册一个。在页面中找到setting<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/40893030.jpg" alt=""></li>
+<li>进去后找到ssh那一栏，点击new ssh key，将复制的内容粘贴进去，大功告成。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/33837002.jpg" alt=""></li>
+</ol>
+<h4 id="node"><a href="#node" class="headerlink" title="node"></a>node</h4><ol>
+<li>新建一个文件夹，我这里是f盘（随意），建一个叫npm的文件夹（f:/npm），</li>
+<li>去<a href="https://nodejs.org/en/" target="_blank" rel="noopener">here</a>下载LTS版本的node</li>
+<li>安装，一路点击，注意装的位置</li>
+<li>装完之后去安装路径，找到npm.cmd这个东西</li>
+<li>打开命令行（按住shift敲鼠标右键，选择在此处打开命令行或者PowerShell），输入<code>npm -v</code>， 接着输入<code>node -v</code>，会显示版本号，表示安装OK。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/22924758.jpg" alt=""></li>
+<li>接着输入<code>npm config set prefix &quot;f:/npm&quot;</code>， 设置npm的全局路径，接着输入 <code>npm install -g npm</code>, 安装一个全局的npm。</li>
+<li>接着在环境变量里面（右键点击电脑-&gt;属性-&gt;高级系统设置-&gt;环境变量-&gt;用户变量）建立NPM_HOME，将其设置为f:/npm，在path里面添加%NPM_HOME%。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/20474890.jpg" alt=""></li>
+<li>接着关掉所有打开的文件夹和命令行，回到桌面，重新打开一个命令行，试试npm -v好不好使</li>
+<li>设置一下镜像，输入： <code>npm config set registry https://registry.npm.taobao.org</code> </li>
+<li>装一个cnpm，输入： <code>npm install cnpm -g</code></li>
+<li>到‘用户’目录下，找到.npmrc文件，用记事本打开，在prefix=f:\npm这一行下面添加<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sass_binary_site=https://npm.taobao.org/mirrors/node-sass/</span><br><span class="line">phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs/</span><br><span class="line">electron_mirror=https://npm.taobao.org/mirrors/electron/</span><br><span class="line">registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h4><ol>
+<li>打开命令行，输入 <code>npm install -g hexo-cli</code> ，安装完成后输入<code>hexo -v</code>查看是否安装成功</li>
+</ol>
+<hr>
+<h3 id="在本地搭建hexo博客"><a href="#在本地搭建hexo博客" class="headerlink" title="在本地搭建hexo博客"></a>在本地搭建hexo博客</h3><h4 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h4><ol>
+<li>选择一个合适的路径，新建一个文件夹，该文件夹即将成为你的博客文件夹。在新建的文件夹下打开终端，输入<code>hexo init</code>，等待安装完成，完成后接着输入<code>npm i</code>,安装必要的组件，完成后接着输入<code>hexo g</code>,生成博客静态文件，接着输入<code>hexo s</code>,打开浏览器，在地址栏中输入<code>localhost:4000</code>回车之后就能看见博客了。</li>
+<li>在终端中按住Ctrl+C键可以退出。</li>
+</ol>
+<h4 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h4><p>在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">这里</a>能找到很多主题</p>
+<ol>
+<li>点击图像可以预览，点击文字可以去github克隆这个主题。这里我们选了这个next主题，外观简洁，功能多样，推荐的人很多。当然你可以随意选。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/4302047.jpg" alt=""></li>
+<li>到github之后，就可以按照他的说明文档尽心主题安装了，注意看安装说明，如果有特殊的步骤都会注明。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/42194811.jpg" alt=""></li>
+<li>复制<code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code>这一句</li>
+<li>到你的博客文件夹根目录下，打开终端，将上面那句粘贴进来，回车。</li>
+<li>可以看到博客文件夹下的theme文件夹里多了一个主题<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/73405017.jpg" alt=""></li>
+<li>点击上图中的_config.yml文件，按照下图修改<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/86230016.jpg" alt=""></li>
+<li>在终端中清一下静态文件<code>hexo clean</code>，接着重新生成<code>hexo g</code>，本地serve一下<code>hexo s</code>，在loacalhost:4000能看到主题已经更换了<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/60554822.jpg" alt=""></li>
+<li>现在试着发一篇文章，在终端中输入<code>hexo new [文章名字]</code>,在新增的[文章名字].md文件中输入一些文字，保存，我这里叫first.md。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/20438466.jpg" alt=""></li>
+<li>在终端中输入<code>hexo g</code>，接着<code>hexo s</code>，以后每次增加新文章都要这么做。现在刷新浏览器，可以看到文章已经更新了。</li>
+<li>等你熟练了一些之后，就可以去网上搜索下next这款主题的配置方法，自行尝试该主题的丰富功能。</li>
+</ol>
+<hr>
+<h3 id="本地博客上线"><a href="#本地博客上线" class="headerlink" title="本地博客上线"></a>本地博客上线</h3><p>我们利用github page将本地的博客推上线</p>
+<ol>
+<li>登录我们的github账号，新建一个仓库<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/87092925.jpg" alt=""></li>
+<li>Repository name仓一栏输入<code>[你的github用户名].github.io</code>，类似下面这个样子，注意替换用户名。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/16665113.jpg" alt=""></li>
+<li>创建好之后点击进入你刚才建的仓库，找到settings，点进去<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/8047537.jpg" alt=""></li>
+<li>一直往下找，找到github page这一栏，上面有你的page地址，复制之后，点击下图的按钮<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/26775707.jpg" alt=""></li>
+<li>访问你的github page，成功后回到hexo博客文件夹，打开根目录下的_config.yml文件，按图下配置，repository写你自己的。<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/50686748.jpg" alt=""></li>
+<li>安装一个部署插件，在终端中输入<code>npm install hexo-deployer-git --save</code></li>
+<li>装好之后开始部署，输入<code>hexo d</code>，部署完成之后githubpage就变成了你hexo博客了。</li>
+</ol>
+<hr>
+<h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><p>我用的阿里云完成的域名购买，比较方便，因为域名要实名制备案，阿里云这块就全部集成了，按照他的流程来操作即可，可以随意。</p>
+<hr>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>域名需要通过dns解析之后才能被识别访问。</p>
+<ol>
+<li>如果你的域名是顶级域名，像这个博客这样的一个单词，就去<a href="https://help.github.com/articles/setting-up-an-apex-domain/" target="_blank" rel="noopener">here</a>,查阅步骤。如果不是，就去<a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target="_blank" rel="noopener">here</a>找到帮助。</li>
+<li>打开域名控制台添加一条a记录，除了记录值一栏，其余按照下图填写<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/95437121.jpg" alt=""></li>
+<li>记录值按照第一步打开的页面中如下部分填写，你的应该不一样，填写其中一条地址<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/312175.jpg" alt=""></li>
+<li>可以重复第二，第三步，将所有的记录值都填写一遍，完成后将填写的几条配置全部启用。</li>
+<li>在github里设置page的自定义域名<br><img src="http://yu-mdfile.oss-cn-hangzhou.aliyuncs.com/18-6-16/11204190.jpg" alt=""></li>
+<li>等几分钟，大功告成</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/12/js-prototype/" rel="next" title="js-prototype">
+                <i class="fa fa-chevron-left"></i> js-prototype
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">截流</p>
+              <p class="site-description motion-element" itemprop="description">居場所がないなら 作ろう</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo环境搭建"><span class="nav-number">1.</span> <span class="nav-text">hexo环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#git"><span class="nav-number">1.1.</span> <span class="nav-text">git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#node"><span class="nav-number">1.2.</span> <span class="nav-text">node</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo"><span class="nav-number">1.3.</span> <span class="nav-text">hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在本地搭建hexo博客"><span class="nav-number">2.</span> <span class="nav-text">在本地搭建hexo博客</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化博客"><span class="nav-number">2.1.</span> <span class="nav-text">初始化博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更换主题"><span class="nav-number">2.2.</span> <span class="nav-text">更换主题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地博客上线"><span class="nav-number">3.</span> <span class="nav-text">本地博客上线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#购买域名"><span class="nav-number">4.</span> <span class="nav-text">购买域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名解析"><span class="nav-number">5.</span> <span class="nav-text">域名解析</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">截流</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
